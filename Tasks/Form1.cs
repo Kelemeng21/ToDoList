@@ -8,13 +8,13 @@ namespace ToDoList
 {
     public partial class Form1 : Form
     {    
-        public string EasyTasksFile  = @"easy.txt";
+        public string EasyTasksFile  = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\easy.txt";
 
-        public string MediumTasksFile  = @"medium.txt";
+        public string MediumTasksFile  = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\medium.txt";
 
-        public string HardTasksFile = @"hard.txt";
+        public string HardTasksFile = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\hard.txt";
 
-        public string XpFile = @"xp.txt";
+        public string XpFile = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\lvl.txt";
 
         public string Homepath = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\ToDoList\\bin\\Debug\\ToDoList.exe";
 
@@ -22,6 +22,12 @@ namespace ToDoList
         {
             InitializeComponent();
             Menu.Click += Menu_Click1;
+            exit.Click += Exit_Click;
+        }
+    
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void Menu_Click1(object sender, EventArgs e)
