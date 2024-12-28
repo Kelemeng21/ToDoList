@@ -4,13 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Tasks
+namespace ToDoList
 {
-    public partial class Form1 : System.Windows.Forms.Form
-    {
-        public string EasyTasksFile = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\easy.txt";
+    public partial class Form1 : Form
+    {    
+        public string EasyTasksFile  = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\easy.txt";
 
-        public string MediumTasksFile = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\medium.txt";
+        public string MediumTasksFile  = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\medium.txt";
 
         public string HardTasksFile = @"C:\\Users\\Kelemen Gábor\\source\\repos\\ToDoList\\Tasks\\ress\\hard.txt";
 
@@ -21,27 +21,16 @@ namespace Tasks
         public Form1()
         {
             InitializeComponent();
-            InitializeEvents();
-        }
-
-        private void InitializeEvents()
-        {
-            Menu.Click += Menu_Click;
+            Menu.Click += Menu_Click1;
             exit.Click += Exit_Click;
-            AddTaskButton.Click += AddTaskButton_Click;
-            RemoveTaskButton.Click += RemoveTaskButton_Click;
-            SaveButton.Click += SaveButton_Click;
-            CategoryComboBox.SelectedIndexChanged += CategoryComboBox_SelectedIndexChanged;
-            TaskInputTextBox.TextChanged += TaskInputTextBox_TextChanged;
-            SelectedTaskInput.TextChanged += SelectedTaskInput_TextChanged;
         }
-
+    
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void Menu_Click(object sender, EventArgs e)
+        private void Menu_Click1(object sender, EventArgs e)
         {
             RunExecutable(Homepath);
         }
@@ -80,12 +69,14 @@ namespace Tasks
             UpdateLevel(xp);
         }
 
+        // Szint frissítése
         private void UpdateLevel(int xp)
         {
             int level = xp / 100; // 100 XP = 1 szint
             LevelLabel.Text = $"Level: {level}";
         }
 
+        // Feladat hozzáadása
         private void AddTaskButton_Click(object sender, EventArgs e)
         {
             string category = CategoryComboBox.SelectedItem?.ToString();
@@ -104,6 +95,7 @@ namespace Tasks
             TaskInputTextBox.Clear();
         }
 
+        // Feladat törlése
         private void RemoveTaskButton_Click(object sender, EventArgs e)
         {
             string category = CategoryComboBox.SelectedItem?.ToString();
@@ -127,6 +119,7 @@ namespace Tasks
             }
         }
 
+        // Feladatok mentése
         private void SaveButton_Click(object sender, EventArgs e)
         {
             SaveTasks(EasyTasksFile, easyRichTextBox);
@@ -140,6 +133,7 @@ namespace Tasks
             File.WriteAllText(filePath, richTextBox.Text);
         }
 
+        // XP növelése és szint frissítése
         private void CompleteTask(string category, string task)
         {
             int xpGained = 0;
@@ -171,6 +165,7 @@ namespace Tasks
             UpdateLevel(currentXp);
         }
 
+        // Kategóriának megfelelő fájl elérése
         private string GetFilePath(string category)
         {
             if (category.Equals("easy", StringComparison.OrdinalIgnoreCase))
@@ -189,6 +184,7 @@ namespace Tasks
             throw new ArgumentException("Invalid category");
         }
 
+        // Feladatok frissítése
         private void RefreshTasks()
         {
             LoadTasks(EasyTasksFile, easyRichTextBox);
@@ -220,31 +216,37 @@ namespace Tasks
 
         private void AddTaskButton_Click_1(object sender, EventArgs e)
         {
-            // Funkcionalitás hozzáadása (ha szükséges)
-        }
 
-        private void RemoveTaskButton_Click_1(object sender, EventArgs e)
-        {
-            // Funkcionalitás hozzáadása (ha szükséges)
         }
 
         private void SaveButton_Click_1(object sender, EventArgs e)
         {
-            // Funkcionalitás hozzáadása (ha szükséges)
+
         }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RemoveTaskButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void CategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Optional: Handle category selection changes if needed
+
         }
 
         private void TaskInputTextBox_TextChanged(object sender, EventArgs e)
         {
-            // Optional: Handle task input text changes if needed
+
         }
 
         private void SelectedTaskInput_TextChanged(object sender, EventArgs e)
         {
-            // Optional: Handle selected task input text changes if needed
+
         }
     }
 }

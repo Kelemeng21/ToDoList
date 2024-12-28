@@ -1,4 +1,4 @@
-﻿namespace ToDoList
+﻿namespace Tasks
 {
     partial class Form1
     {
@@ -15,6 +15,8 @@
 
         private void InitializeComponent()
         {
+
+
             this.easyRichTextBox = new System.Windows.Forms.RichTextBox();
             this.mediumRichTextBox = new System.Windows.Forms.RichTextBox();
             this.hardRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -35,7 +37,7 @@
             // easyRichTextBox
             // 
             this.easyRichTextBox.Location = new System.Drawing.Point(3, 140);
-            this.easyRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.easyRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.easyRichTextBox.Name = "easyRichTextBox";
             this.easyRichTextBox.Size = new System.Drawing.Size(151, 285);
             this.easyRichTextBox.TabIndex = 0;
@@ -44,7 +46,7 @@
             // mediumRichTextBox
             // 
             this.mediumRichTextBox.Location = new System.Drawing.Point(169, 140);
-            this.mediumRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mediumRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.mediumRichTextBox.Name = "mediumRichTextBox";
             this.mediumRichTextBox.Size = new System.Drawing.Size(151, 285);
             this.mediumRichTextBox.TabIndex = 1;
@@ -53,7 +55,7 @@
             // hardRichTextBox
             // 
             this.hardRichTextBox.Location = new System.Drawing.Point(333, 140);
-            this.hardRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hardRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.hardRichTextBox.Name = "hardRichTextBox";
             this.hardRichTextBox.Size = new System.Drawing.Size(151, 285);
             this.hardRichTextBox.TabIndex = 2;
@@ -68,7 +70,7 @@
             "medium",
             "hard"});
             this.CategoryComboBox.Location = new System.Drawing.Point(3, 440);
-            this.CategoryComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CategoryComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.CategoryComboBox.Name = "CategoryComboBox";
             this.CategoryComboBox.Size = new System.Drawing.Size(151, 21);
             this.CategoryComboBox.TabIndex = 3;
@@ -77,7 +79,7 @@
             // TaskInputTextBox
             // 
             this.TaskInputTextBox.Location = new System.Drawing.Point(169, 440);
-            this.TaskInputTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TaskInputTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.TaskInputTextBox.Name = "TaskInputTextBox";
             this.TaskInputTextBox.Size = new System.Drawing.Size(151, 20);
             this.TaskInputTextBox.TabIndex = 4;
@@ -86,7 +88,7 @@
             // AddTaskButton
             // 
             this.AddTaskButton.Location = new System.Drawing.Point(333, 440);
-            this.AddTaskButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddTaskButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddTaskButton.Name = "AddTaskButton";
             this.AddTaskButton.Size = new System.Drawing.Size(150, 20);
             this.AddTaskButton.TabIndex = 5;
@@ -97,7 +99,7 @@
             // RemoveTaskButton
             // 
             this.RemoveTaskButton.Location = new System.Drawing.Point(333, 467);
-            this.RemoveTaskButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RemoveTaskButton.Margin = new System.Windows.Forms.Padding(2);
             this.RemoveTaskButton.Name = "RemoveTaskButton";
             this.RemoveTaskButton.Size = new System.Drawing.Size(150, 20);
             this.RemoveTaskButton.TabIndex = 6;
@@ -108,7 +110,7 @@
             // SaveButton
             // 
             this.SaveButton.Location = new System.Drawing.Point(169, 467);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(150, 20);
             this.SaveButton.TabIndex = 7;
@@ -119,7 +121,7 @@
             // SelectedTaskInput
             // 
             this.SelectedTaskInput.Location = new System.Drawing.Point(3, 467);
-            this.SelectedTaskInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SelectedTaskInput.Margin = new System.Windows.Forms.Padding(2);
             this.SelectedTaskInput.Name = "SelectedTaskInput";
             this.SelectedTaskInput.Size = new System.Drawing.Size(151, 20);
             this.SelectedTaskInput.TabIndex = 8;
@@ -205,12 +207,14 @@
             this.Controls.Add(this.hardRichTextBox);
             this.Controls.Add(this.mediumRichTextBox);
             this.Controls.Add(this.easyRichTextBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "To-Do List";
+            this.Text = "Task";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+
 
         }
 
