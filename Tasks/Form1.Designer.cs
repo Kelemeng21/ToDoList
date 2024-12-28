@@ -35,6 +35,8 @@
             // 
             // easyRichTextBox
             // 
+            this.easyRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.easyRichTextBox.BackColor = System.Drawing.Color.Lavender;
             this.easyRichTextBox.Location = new System.Drawing.Point(4, 100);
             this.easyRichTextBox.Margin = new System.Windows.Forms.Padding(2);
@@ -46,6 +48,9 @@
             // 
             // mediumRichTextBox
             // 
+            this.mediumRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.mediumRichTextBox.BackColor = System.Drawing.Color.Lavender;
             this.mediumRichTextBox.Location = new System.Drawing.Point(169, 100);
             this.mediumRichTextBox.Margin = new System.Windows.Forms.Padding(2);
@@ -57,6 +62,8 @@
             // 
             // hardRichTextBox
             // 
+            this.hardRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.hardRichTextBox.BackColor = System.Drawing.Color.Lavender;
             this.hardRichTextBox.Location = new System.Drawing.Point(334, 100);
             this.hardRichTextBox.Margin = new System.Windows.Forms.Padding(2);
@@ -68,17 +75,21 @@
             // 
             // CategoryComboBox
             // 
+            this.CategoryComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CategoryComboBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.CategoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoryComboBox.FormattingEnabled = true;
+            this.CategoryComboBox.ItemHeight = 13;
             this.CategoryComboBox.Items.AddRange(new object[] {
             "easy",
-            "hard",
-            "medium"});
+            "medium",
+            "hard"});
             this.CategoryComboBox.Location = new System.Drawing.Point(334, 400);
             this.CategoryComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.CategoryComboBox.Name = "CategoryComboBox";
             this.CategoryComboBox.Size = new System.Drawing.Size(150, 21);
-            this.CategoryComboBox.Sorted = true;
             this.CategoryComboBox.TabIndex = 3;
             this.CategoryComboBox.SelectedIndexChanged += new System.EventHandler(this.CategoryComboBox_SelectedIndexChanged);
             // 
@@ -95,6 +106,9 @@
             // 
             // AddTaskButton
             // 
+            this.AddTaskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AddTaskButton.Location = new System.Drawing.Point(170, 400);
             this.AddTaskButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddTaskButton.Name = "AddTaskButton";
@@ -106,6 +120,9 @@
             // 
             // RemoveTaskButton
             // 
+            this.RemoveTaskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.RemoveTaskButton.Location = new System.Drawing.Point(170, 454);
             this.RemoveTaskButton.Margin = new System.Windows.Forms.Padding(2);
             this.RemoveTaskButton.Name = "RemoveTaskButton";
@@ -117,6 +134,9 @@
             // 
             // SaveButton
             // 
+            this.SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SaveButton.Location = new System.Drawing.Point(334, 454);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
@@ -128,6 +148,9 @@
             // 
             // SelectedTaskInput
             // 
+            this.SelectedTaskInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectedTaskInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.SelectedTaskInput.Location = new System.Drawing.Point(4, 454);
             this.SelectedTaskInput.Margin = new System.Windows.Forms.Padding(2);
@@ -139,6 +162,9 @@
             // 
             // LevelLabel
             // 
+            this.LevelLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LevelLabel.AutoSize = true;
             this.LevelLabel.BackColor = System.Drawing.Color.Transparent;
             this.LevelLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
@@ -151,6 +177,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(0, 45);
@@ -162,20 +191,26 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(160, 45);
+            this.label2.Location = new System.Drawing.Point(166, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 53);
             this.label2.TabIndex = 10;
-            this.label2.Text = "medium";
+            this.label2.Text = "Medium";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(330, 45);
+            this.label3.Location = new System.Drawing.Point(330, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 53);
             this.label3.TabIndex = 10;
@@ -184,6 +219,9 @@
             // 
             // Menu
             // 
+            this.Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu.Location = new System.Drawing.Point(3, 558);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(150, 40);
@@ -194,6 +232,9 @@
             // 
             // exit
             // 
+            this.exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.exit.Location = new System.Drawing.Point(334, 558);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(150, 40);
@@ -203,6 +244,9 @@
             // 
             // progressBar1
             // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.progressBar1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.progressBar1.Location = new System.Drawing.Point(114, 13);
@@ -236,6 +280,8 @@
             this.Controls.Add(this.mediumRichTextBox);
             this.Controls.Add(this.easyRichTextBox);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(504, 700);
+            this.MinimumSize = new System.Drawing.Size(504, 700);
             this.Name = "Form1";
             this.Text = "Task";
             this.Load += new System.EventHandler(this.Form1_Load);

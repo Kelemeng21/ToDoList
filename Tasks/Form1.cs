@@ -223,31 +223,31 @@ namespace Tasks
 
         private void AddTaskButton_Click_1(object sender, EventArgs e)
         {
-            // Funkcionalitás hozzáadása (ha szükséges)
+            
         }
 
         private void RemoveTaskButton_Click_1(object sender, EventArgs e)
         {
-            // Funkcionalitás hozzáadása (ha szükséges)
+           
         }
 
         private void SaveButton_Click_1(object sender, EventArgs e)
         {
-            // Funkcionalitás hozzáadása (ha szükséges)
+            
         }
         private void CategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Optional: Handle category selection changes if needed
+            
         }
 
         private void TaskInputTextBox_TextChanged(object sender, EventArgs e)
         {
-            // Optional: Handle task input text changes if needed
+            
         }
 
         private void SelectedTaskInput_TextChanged(object sender, EventArgs e)
         {
-            // Optional: Handle selected task input text changes if needed
+
         }
     }
 }
