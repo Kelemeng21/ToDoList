@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tasks
 {
@@ -82,7 +83,9 @@ namespace Tasks
 
         private void UpdateLevel(int xp)
         {
-            int level = xp / 100; // 100 XP = 1 szint
+            int level = xp / 100;
+            int progres = (xp - level * 100);
+            progressBar1.Value = progres;
             LevelLabel.Text = $"Level: {level}";
         }
 
