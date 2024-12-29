@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 9);
+            this.label1.Location = new System.Drawing.Point(46, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(394, 103);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // Tasks
             // 
-            this.Tasks.Location = new System.Drawing.Point(278, 115);
+            this.Tasks.Location = new System.Drawing.Point(136, 115);
             this.Tasks.Name = "Tasks";
             this.Tasks.Size = new System.Drawing.Size(215, 64);
             this.Tasks.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // Informations
             // 
-            this.Informations.Location = new System.Drawing.Point(278, 203);
+            this.Informations.Location = new System.Drawing.Point(136, 205);
             this.Informations.Name = "Informations";
             this.Informations.Size = new System.Drawing.Size(215, 64);
             this.Informations.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(278, 289);
+            this.Exit.Location = new System.Drawing.Point(136, 289);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(215, 64);
             this.Exit.TabIndex = 1;
@@ -76,11 +76,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(805, 449);
+            this.ClientSize = new System.Drawing.Size(488, 661);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Informations);
             this.Controls.Add(this.Tasks);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(504, 700);
+            this.MinimumSize = new System.Drawing.Size(504, 700);
             this.Name = "Menu";
             this.Text = "Form1";
             this.ResumeLayout(false);
